@@ -18,3 +18,4 @@ setup(
     url='https://github.com/Japulgarin/JP_Consumer-Theory',
     license='MIT',
 )
+
