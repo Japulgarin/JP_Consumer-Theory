@@ -5,7 +5,10 @@ setup(
     version='0.1',
     packages=find_packages(),
     install_requires=[
-        # List your dependencies here
+        'sympy',          # Dependency for symbolic mathematics
+        'numpy',          # Dependency for numerical computations
+        'scipy',          # Dependency for optimization (fsolve)
+        'matplotlib',     # Dependency for plotting
     ],
     author='Jorge Andres Pulgarin Barbosa',
     author_email='japulgarin@uninorte.edu.co',
