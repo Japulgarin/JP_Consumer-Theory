@@ -13,9 +13,16 @@ class TestOptimization(unittest.TestCase):
         # Call the function you want to test
         result = utility_optimize(PA, PB, Y, alpha)
         
-        # Assert expected outcomes (you'll need to replace these with your expected results)
-        self.assertIsNotNone(result)  # For example, check if the result is not None
-        # Add more assertions here as needed
+        # Assert expected outcomes
+        self.assertIsNotNone(result)  # Ensure the result is not None
+        
+        # You can add more specific assertions based on your function's behavior
+        # For example, check if the result is a numeric value
+        self.assertIsInstance(result, (int, float)) 
+        
+        # You can also check if the result is within a certain range or meets specific criteria
+        # For example, check if the result is greater than or equal to 0
+        self.assertGreaterEqual(result, 0)
         
     # Add more test methods as needed
 
